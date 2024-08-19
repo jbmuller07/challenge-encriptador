@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador JBM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon5.png" type="image/png">
+</head>
+<body>
+    <header>
+        <img class="logo" src="Logo.png" alt="Logo de Alura">
+        <h1>Encriptador Personalizado</h1>
+    </header>
+
+    <main>
+        <section class="seccion1">
+            <div>
+                <textarea type="text" required class="texto__usuario" cols="30" row="10" placeholder="Ingrese la frase para encriptar/desencriptar"></textarea>
+            </div>
+            <div class="informacion">
+                <p>Solo admite letras minúsculas sin acento</p>
+            </div>
+            <div class="botones">
+                <button class="botones__encriptar" onclick="botonEncriptar()">Encriptar</button>
+                <button class="botones__desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="seccion2">
+            <div class="seccion2__mensaje">
+                <textarea class="texto__mensaje" cols="20" row="10"></textarea> 
+                <button class="botones__copiar" id="copy" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        Desarrollado por JBMULLER &#174; Todos los derechos reservados - 2024 -
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
